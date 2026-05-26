@@ -10,9 +10,9 @@ const teamData = {
             name: "Member Name 1",
             role: "Team Leader",
             category: "leadership",
+            icon: "fas fa-crown",
             description: "Leading our team with vision and passion for innovation.",
             bio: "A visionary leader with over 5 years of experience in project management and team coordination. Passionate about driving innovation and building high-performing teams that deliver exceptional results.",
-            image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
             skills: ["Leadership", "Strategy", "Project Management", "Team Building"],
             social: {
                 linkedin: "https://linkedin.com",
@@ -26,9 +26,9 @@ const teamData = {
             name: "Member Name 2",
             role: "Full Stack Developer",
             category: "development",
+            icon: "fas fa-code",
             description: "Crafting robust and scalable web applications.",
             bio: "Expert full-stack developer specializing in modern web technologies. Passionate about creating elegant solutions to complex problems and writing clean, maintainable code.",
-            image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&q=80",
             skills: ["JavaScript", "React", "Node.js", "Python", "MongoDB"],
             social: {
                 linkedin: "https://linkedin.com",
@@ -42,9 +42,9 @@ const teamData = {
             name: "Member Name 3",
             role: "UI/UX Designer",
             category: "design",
+            icon: "fas fa-palette",
             description: "Creating beautiful and intuitive user experiences.",
             bio: "Creative designer with a keen eye for aesthetics and user experience. Specialized in creating intuitive interfaces that users love and businesses need.",
-            image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80",
             skills: ["UI Design", "UX Research", "Figma", "Adobe XD", "Prototyping"],
             social: {
                 linkedin: "https://linkedin.com",
@@ -58,9 +58,9 @@ const teamData = {
             name: "Member Name 4",
             role: "Digital Marketing Strategist",
             category: "marketing",
+            icon: "fas fa-chart-line",
             description: "Driving growth through data-driven marketing strategies.",
             bio: "Results-driven marketing professional with expertise in digital strategy, SEO, and content marketing. Proven track record of growing online presence and driving conversions.",
-            image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=800&q=80",
             skills: ["SEO", "Content Strategy", "Social Media", "Analytics", "PPC"],
             social: {
                 linkedin: "https://linkedin.com",
@@ -74,9 +74,9 @@ const teamData = {
             name: "Member Name 5",
             role: "Data Scientist",
             category: "development",
+            icon: "fas fa-brain",
             description: "Transforming data into actionable insights.",
             bio: "Data enthusiast with strong analytical skills and expertise in machine learning. Passionate about uncovering patterns in data and building predictive models.",
-            image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&q=80",
             skills: ["Python", "Machine Learning", "Data Visualization", "SQL", "TensorFlow"],
             social: {
                 linkedin: "https://linkedin.com",
@@ -112,27 +112,23 @@ function renderTeamCards(filter = 'all') {
         card.style.animationDelay = `${index * 0.1}s`;
         
         card.innerHTML = `
-            <div class="card-image-wrapper">
-                <img src="${member.image}" alt="${member.name}" class="card-image">
-                <div class="card-overlay">
-                    <div class="card-social">
-                        ${member.social.linkedin ? `<a href="${member.social.linkedin}" target="_blank" class="social-icon" onclick="event.stopPropagation()"><i class="fab fa-linkedin"></i></a>` : ''}
-                        ${member.social.github ? `<a href="${member.social.github}" target="_blank" class="social-icon" onclick="event.stopPropagation()"><i class="fab fa-github"></i></a>` : ''}
-                        ${member.social.twitter ? `<a href="${member.social.twitter}" target="_blank" class="social-icon" onclick="event.stopPropagation()"><i class="fab fa-twitter"></i></a>` : ''}
-                        ${member.social.email ? `<a href="mailto:${member.social.email}" class="social-icon" onclick="event.stopPropagation()"><i class="fas fa-envelope"></i></a>` : ''}
-                    </div>
-                </div>
+            <div class="card-icon">
+                <i class="${member.icon}"></i>
             </div>
             <div class="card-content">
-                <div class="card-header">
-                    <h3 class="card-name">${member.name}</h3>
-                    <span class="card-role">${member.role}</span>
-                </div>
+                <h3 class="card-name">${member.name}</h3>
+                <span class="card-role">${member.role}</span>
                 <p class="card-description">${member.description}</p>
                 <div class="card-skills">
                     ${member.skills.slice(0, 3).map(skill => `<span class="skill-badge">${skill}</span>`).join('')}
                     ${member.skills.length > 3 ? `<span class="skill-badge">+${member.skills.length - 3}</span>` : ''}
                 </div>
+            </div>
+            <div class="card-social">
+                ${member.social.linkedin ? `<a href="${member.social.linkedin}" target="_blank" class="social-icon" onclick="event.stopPropagation()"><i class="fab fa-linkedin"></i></a>` : ''}
+                ${member.social.github ? `<a href="${member.social.github}" target="_blank" class="social-icon" onclick="event.stopPropagation()"><i class="fab fa-github"></i></a>` : ''}
+                ${member.social.twitter ? `<a href="${member.social.twitter}" target="_blank" class="social-icon" onclick="event.stopPropagation()"><i class="fab fa-twitter"></i></a>` : ''}
+                ${member.social.email ? `<a href="mailto:${member.social.email}" class="social-icon" onclick="event.stopPropagation()"><i class="fas fa-envelope"></i></a>` : ''}
             </div>
         `;
         
@@ -154,15 +150,12 @@ filterButtons.forEach(button => {
 
 // ==================== MODAL ====================
 function openModal(member) {
-    const modalImage = document.getElementById('modalImage');
     const modalName = document.getElementById('modalName');
     const modalRole = document.getElementById('modalRole');
     const modalBio = document.getElementById('modalBio');
     const modalSkills = document.getElementById('modalSkills');
     const modalSocial = document.getElementById('modalSocial');
     
-    modalImage.src = member.image;
-    modalImage.alt = member.name;
     modalName.textContent = member.name;
     modalRole.textContent = member.role;
     modalBio.textContent = member.bio;
