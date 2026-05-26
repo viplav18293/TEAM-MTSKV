@@ -1,77 +1,76 @@
 // ==================== TEAM DATA ====================
-// 🔥 EDIT THIS SECTION 🔥
-
 const teamData = {
     teamName: "TEAM MTSKV",
     tagline: "Building the future, one project at a time",
     members: [
         {
-            id: 922,
+            id: 1,
             name: "S. Viplav",
-            role: "Team Co-Ordinator",
-            category: "Intern",
+            role: "Team Coordinator",
+            category: "team-coordinator",
             icon: "fas fa-crown",
-            description: "Leading our team with vision and passion for innovation.",
+            description: "Leading innovation and excellence",
             bio: "I am a B.Tech CSE (AI) student at ICFAI University, currently serving as a Coordinator in the Swecha Viswam AI Internship Program. I enjoy organizing team workflows, collaborating on AI-driven initiatives, and learning modern software technologies.",
             skills: ["C", "OOPS", "MYSQL", "PYTHON"],
             social: {
                 linkedin: "https://www.linkedin.com/in/viplav-sindhu",
-                github: "https://github.com/shindhuviplav-code",
-            
-            name: "Member Name 2",
-            role: "Full Stack Developer",
-            category: "development",
+                github: "https://github.com/shindhuviplav-code"
+            }
+        },
+        {
+            id: 2,
+            name: "MEMBER 2 NAME",
+            role: "Intern",
+            category: "team-member",
             icon: "fas fa-code",
-            description: "Crafting robust and scalable web applications.",
-            bio: "Expert full-stack developer specializing in modern web technologies. Passionate about creating elegant solutions to complex problems and writing clean, maintainable code.",
-            skills: ["JavaScript", "React", "Node.js", "Python", "MongoDB"],
+            description: "Building scalable solutions",
+            bio: "Passionate developer with expertise in modern technologies.",
+            skills: ["JavaScript", "React", "Node.js", "Python"],
             social: {
                 linkedin: "https://linkedin.com",
-                github: "https://github.com",
-                
+                github: "https://github.com"
             }
         },
         {
             id: 3,
-            name: "Member Name 3",
-            role: "UI/UX Designer",
-            category: "design",
+            name: "MEMBER 3 NAME",
+            role: "Intern",
+            category: "team-member",
             icon: "fas fa-palette",
-            description: "Creating beautiful and intuitive user experiences.",
-            bio: "Creative designer with a keen eye for aesthetics and user experience. Specialized in creating intuitive interfaces that users love and businesses need.",
-            skills: ["UI Design", "UX Research", "Figma", "Adobe XD", "Prototyping"],
+            description: "Creating beautiful experiences",
+            bio: "Creative designer focused on user experience.",
+            skills: ["UI Design", "Figma", "UX Research", "Prototyping"],
             social: {
                 linkedin: "https://linkedin.com",
-                github: "https://github.com",
+                github: "https://github.com"
             }
         },
         {
             id: 4,
-            name: "Member Name 4",
-            role: "Digital Marketing Strategist",
-            category: "marketing",
+            name: "MEMBER 4 NAME",
+            role: "Intern",
+            category: "team-member",
             icon: "fas fa-chart-line",
-            description: "Driving growth through data-driven marketing strategies.",
-            bio: "Results-driven marketing professional with expertise in digital strategy, SEO, and content marketing. Proven track record of growing online presence and driving conversions.",
-            skills: ["SEO", "Content Strategy", "Social Media", "Analytics", "PPC"],
+            description: "Driving growth",
+            bio: "Data-driven marketer with expertise in digital strategy.",
+            skills: ["SEO", "Marketing", "Analytics", "Content Strategy"],
             social: {
                 linkedin: "https://linkedin.com",
-                github: "https://github.com",
+                github: "https://github.com"
             }
         },
         {
             id: 5,
-            name: "Member Name 5",
-            role: "Data Scientist",
-            category: "development",
+            name: "MEMBER 5 NAME",
+            role: "Intern",
+            category: "team-member",
             icon: "fas fa-brain",
-            description: "Transforming data into actionable insights.",
-            bio: "Data enthusiast with strong analytical skills and expertise in machine learning. Passionate about uncovering patterns in data and building predictive models.",
-            skills: ["Python", "Machine Learning", "Data Visualization", "SQL", "TensorFlow"],
+            description: "Transforming data",
+            bio: "Data scientist passionate about machine learning.",
+            skills: ["Python", "Machine Learning", "Data Analysis", "SQL"],
             social: {
                 linkedin: "https://linkedin.com",
-                github: "https://github.com",
-                
+                github: "https://github.com"
             }
         }
     ]
@@ -116,8 +115,6 @@ function renderTeamCards(filter = 'all') {
             <div class="card-social">
                 ${member.social.linkedin ? `<a href="${member.social.linkedin}" target="_blank" class="social-icon" onclick="event.stopPropagation()"><i class="fab fa-linkedin"></i></a>` : ''}
                 ${member.social.github ? `<a href="${member.social.github}" target="_blank" class="social-icon" onclick="event.stopPropagation()"><i class="fab fa-github"></i></a>` : ''}
-                ${member.social.twitter ? `<a href="${member.social.twitter}" target="_blank" class="social-icon" onclick="event.stopPropagation()"><i class="fab fa-twitter"></i></a>` : ''}
-                ${member.social.email ? `<a href="mailto:${member.social.email}" class="social-icon" onclick="event.stopPropagation()"><i class="fas fa-envelope"></i></a>` : ''}
             </div>
         `;
         
@@ -156,8 +153,6 @@ function openModal(member) {
     modalSocial.innerHTML = `
         ${member.social.linkedin ? `<a href="${member.social.linkedin}" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>` : ''}
         ${member.social.github ? `<a href="${member.social.github}" target="_blank" class="social-link"><i class="fab fa-github"></i></a>` : ''}
-        ${member.social.twitter ? `<a href="${member.social.twitter}" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>` : ''}
-        ${member.social.email ? `<a href="mailto:${member.social.email}" class="social-link"><i class="fas fa-envelope"></i></a>` : ''}
     `;
     
     modal.classList.add('active');
