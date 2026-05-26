@@ -6,23 +6,18 @@ const teamData = {
     tagline: "Building the future, one project at a time",
     members: [
         {
-            id: 1,
-            name: "Member Name 1",
-            role: "Team Leader",
-            category: "leadership",
+            id: 922,
+            name: "S. Viplav",
+            role: "Team Co-Ordinator",
+            category: "Intern",
             icon: "fas fa-crown",
             description: "Leading our team with vision and passion for innovation.",
-            bio: "A visionary leader with over 5 years of experience in project management and team coordination. Passionate about driving innovation and building high-performing teams that deliver exceptional results.",
-            skills: ["Leadership", "Strategy", "Project Management", "Team Building"],
+            bio: "I am a B.Tech CSE (AI) student at ICFAI University, currently serving as a Coordinator in the Swecha Viswam AI Internship Program. I enjoy organizing team workflows, collaborating on AI-driven initiatives, and learning modern software technologies.",
+            skills: ["C", "OOPS", "MYSQL", "PYTHON"],
             social: {
-                linkedin: "https://linkedin.com",
-                github: "https://github.com",
-                twitter: "https://twitter.com",
-                email: "member1@mtskv.com"
-            }
-        },
-        {
-            id: 2,
+                linkedin: "https://www.linkedin.com/in/viplav-sindhu",
+                github: "https://github.com/shindhuviplav-code",
+            
             name: "Member Name 2",
             role: "Full Stack Developer",
             category: "development",
@@ -33,8 +28,7 @@ const teamData = {
             social: {
                 linkedin: "https://linkedin.com",
                 github: "https://github.com",
-                twitter: "https://twitter.com",
-                email: "member2@mtskv.com"
+                
             }
         },
         {
@@ -49,8 +43,6 @@ const teamData = {
             social: {
                 linkedin: "https://linkedin.com",
                 github: "https://github.com",
-                twitter: "https://twitter.com",
-                email: "member3@mtskv.com"
             }
         },
         {
@@ -65,8 +57,6 @@ const teamData = {
             social: {
                 linkedin: "https://linkedin.com",
                 github: "https://github.com",
-                twitter: "https://twitter.com",
-                email: "member4@mtskv.com"
             }
         },
         {
@@ -81,8 +71,7 @@ const teamData = {
             social: {
                 linkedin: "https://linkedin.com",
                 github: "https://github.com",
-                twitter: "https://twitter.com",
-                email: "member5@mtskv.com"
+                
             }
         }
     ]
