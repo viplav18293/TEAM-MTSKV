@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEAM MTSKV - Our Team</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1 class="team-name">TEAM MTSKV</h1>
+            <p class="team-tagline">Excellence Through Collaboration</p>
+        </div>
+    </header>
+
+    <!-- Team Members Section -->
+    <section class="team-section">
+        <div class="container">
+            <h2 class="section-title">Meet Our Team</h2>
+            
+            <div class="team-grid" id="teamGrid">
+                <!-- Team members will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Member Details -->
+    <div class="modal" id="memberModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <div class="modal-body">
+                <img src="" alt="" class="modal-image" id="modalImage">
+                <h2 class="modal-name" id="modalName"></h2>
+                <p class="modal-role" id="modalRole"></p>
+                <p class="modal-bio" id="modalBio"></p>
+                <div class="modal-skills" id="modalSkills"></div>
+                <div class="modal-social" id="modalSocial"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 TEAM MTSKV. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
