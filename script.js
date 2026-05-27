@@ -19,58 +19,58 @@ const teamData = {
         },
         {
             id: 2,
-            name: "MEMBER 2 NAME",
+            name: "G.Sampath",
             role: "Intern",
             category: "team-member",
             icon: "fas fa-code",
-            description: "Building scalable solutions",
-            bio: "Passionate developer with expertise in modern technologies.",
-            skills: ["JavaScript", "React", "Node.js", "Python"],
+            description: "Enthusiastic CSE student with strong interest in machine learning and software development",
+            bio: "I am currently pursuing my B.Tech in Computer Science at ICFAI Tech University, Hyderabad, with a CGPA of 8.88. I have hands-on experience in developing projects like a Vehicle Service Management System using Flask and MySQL, and an Accident Detection System using ESP32 and GPS. I am skilled in Python, SQL, and web technologies, and I continuously work on improving my technical and problem-solving abilities.",
+            skills: ["JavaScript", "OOPS", "C", "Python"],
             social: {
-                linkedin: "https://linkedin.com",
-                github: "https://github.com"
+                linkedin: "https://www.linkedin.com/in/sampath-gajawada-72a10b362",
+                github: "https://github.com/GajawadaSampath"
             }
         },
         {
             id: 3,
-            name: "MEMBER 3 NAME",
+            name: "N.Teja",
             role: "Intern",
             category: "team-member",
             icon: "fas fa-palette",
             description: "Creating beautiful experiences",
-            bio: "Creative designer focused on user experience.",
+            bio: "A Computer Science Engineering student at ICFAI University with a strong interest in software development, problem-solving, and emerging technologies. I’m passionate about learning new technologies, building practical projects, and gaining real-world experience through internships and collaborative work environments.",
             skills: ["UI Design", "Figma", "UX Research", "Prototyping"],
             social: {
-                linkedin: "https://linkedin.com",
-                github: "https://github.com"
+                linkedin: "http://linkedin.com/in/teja-narra-86a42136b",
+                github: "https://github.com/nteja2210"
             }
         },
         {
             id: 4,
-            name: "MEMBER 4 NAME",
+            name: "N.Manoj",
             role: "Intern",
             category: "team-member",
             icon: "fas fa-chart-line",
             description: "Driving growth",
-            bio: "Data-driven marketer with expertise in digital strategy.",
+            bio: "I am a B.Tech CSE (AI) student at ICFAI University, currently serving as a Intern in the Swecha Viswam AI Internship Program, collaborating on AI-driven initiatives, and learning modern software technologies.",
             skills: ["SEO", "Marketing", "Analytics", "Content Strategy"],
             social: {
-                linkedin: "https://linkedin.com",
-                github: "https://github.com"
+                linkedin: "https://www.linkedin.com/in/manoj-nalluri-61b0b1327",
+                github: "https://github.com/nmanoj995152"
             }
         },
         {
             id: 5,
-            name: "MEMBER 5 NAME",
+            name: "M.Karthik",
             role: "Intern",
             category: "team-member",
             icon: "fas fa-brain",
-            description: "Transforming data",
-            bio: "Data scientist passionate about machine learning.",
-            skills: ["Python", "Machine Learning", "Data Analysis", "SQL"],
+            description: "Passionate about AI, software development, and problem-solving.",
+            bio: "I am a B.Tech CSE student at ICFAI Foundation for Higher Education, Hyderabad. I am interested in Software Development, Data Science, and Artificial Intelligence. I enjoy building practical projects, learning new technologies, and improving my problem-solving skills through real-world applications and teamwork.",
+            skills: ["Python", "MySql", "C", "JS"],
             social: {
-                linkedin: "https://linkedin.com",
-                github: "https://github.com"
+                linkedin: "https://linkedin.com/in/karthik-mashetty-804439300",
+                github: "https://github.com/MASHETTYKARTHIK"
             }
         }
     ]
