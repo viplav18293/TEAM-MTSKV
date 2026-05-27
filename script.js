@@ -39,7 +39,7 @@ const teamData = {
             icon: "fas fa-palette",
             description: "Creating beautiful experiences",
             bio: "A Computer Science Engineering student at ICFAI University with a strong interest in software development, problem-solving, and emerging technologies. I’m passionate about learning new technologies, building practical projects, and gaining real-world experience through internships and collaborative work environments.",
-            skills: ["UI Design", "Figma", "UX Research", "Prototyping"],
+            skills: ["C", "JS", "MYSQL", "Python"],
             social: {
                 linkedin: "http://linkedin.com/in/teja-narra-86a42136b",
                 github: "https://github.com/nteja2210"
@@ -53,7 +53,7 @@ const teamData = {
             icon: "fas fa-chart-line",
             description: "Driving growth",
             bio: "I am a B.Tech CSE (AI) student at ICFAI University, currently serving as a Intern in the Swecha Viswam AI Internship Program, collaborating on AI-driven initiatives, and learning modern software technologies.",
-            skills: ["SEO", "Marketing", "Analytics", "Content Strategy"],
+            skills: ["MySql", "C", "Analytics", "Python"],
             social: {
                 linkedin: "https://www.linkedin.com/in/manoj-nalluri-61b0b1327",
                 github: "https://github.com/nmanoj995152"
